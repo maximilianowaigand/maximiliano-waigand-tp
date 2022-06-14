@@ -1,0 +1,132 @@
+@import url("components/_footer.scss");
+video {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+  width: 100%;
+  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #5b8291; }
+
+.empresa {
+  z-index: -1;
+  padding: 60px 40px 200px;
+  color: white;
+  font-size: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 2s;
+  width: 100%; }
+  .empresa:hover {
+    transform: scaleX(1.25); }
+
+.vision {
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  font-size: 20px;
+  padding: 20px;
+  margin: 5px 390px;
+  background-image: linear-gradient(#5b8291, #98dad9); }
+
+.productos {
+  color: black; }
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+  width: 50%;
+  list-style: none; }
+
+.conteiner-list .list a {
+  color: white;
+  text-decoration: none; }
+
+h3 {
+  padding: 40px 10px 0 10px;
+  color: whitesmoke;
+  background-image: linear-gradient(#50b6ff, #50b6ff38);
+  display: flex;
+  justify-content: flex-start;
+  font-size: 30px; }
+
+.nuestros-trabajos {
+  display: flex;
+  justify-content: center; }
+
+.img-model {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.conteiner-sociales {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  display: flex;
+  flex-direction: row-reverse; }
+
+.sociales {
+  display: flex;
+  justify-content: space-between;
+  width: 3%; }
+
+.nombre-empresa {
+  background-color: black;
+  color: white;
+  font-size: 44px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center; }
+
+.img-fabrica {
+  width: 50%;
+  border: 4px solid black; }
+
+.conteiner-productos {
+  display: grid;
+  grid-template-rows: 1fr 1  fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px 5px;
+  margin: 10px 10px;
+  grid-template-areas: "aberturas complementos puertas" "aberturas pisos pisos"; }
+
+.aberturas {
+  grid-area: aberturas; }
+
+.pisos {
+  grid-area: pisos; }
+
+.complementos {
+  grid-area: complementos; }
+
+.puertas {
+  grid-area: puertas; }
+
+.pyd {
+  height: 100%;
+  width: 100%; }
+
+@media (max-width: 576px) {
+  .conteiner-productos {
+    display: flex;
+    flex-direction: column; } }
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0; }
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 95%;
+  width: 100%;
+  position: absolute; }

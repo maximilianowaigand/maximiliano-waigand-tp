@@ -1,0 +1,39 @@
+
+.productos {
+	color: black;}
+
+    
+.conteiner-productos {
+	display: grid;
+	grid-template-rows: 250px 150px;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 5px 5px;
+	margin: 10px 50px;
+	grid-template-areas:
+	"puertas complementos aberturas"
+    "puertas pisos pisos";
+
+}
+.aberturas {
+	grid-area: aberturas;
+}
+.pisos {
+	grid-area: pisos;
+	}
+
+.complementos {
+	grid-area: complementos;
+}
+.puertas {
+	grid-area: puertas;
+}
+.pyd {
+	height: 100%;
+	width: 100%;}
+
+@media (max-width:576px) {
+	.conteiner-productos { display: flex;
+		flex-direction: column;
+
+	}
+}

@@ -1,12 +1,13 @@
 
-.conteiner-sociales:{
-    position: fixed;
+
+  .conteiner-sociales {
+	position: fixed;
 	bottom: 0;
 	right: 10px;
 	display: flex;
 	flex-direction: row-reverse;
-    .sociales: 
+}
+.sociales {
 	display: flex;
 	justify-content: space-between;
-	width: 3%;
-  }
+	width: 3%;}

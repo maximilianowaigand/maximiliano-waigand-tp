@@ -296,5 +296,13 @@
     "undefsafe": "^2.0.5",
     "yallist": "^4.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximilianowaigand/maximiliano-waigand-tp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maximilianowaigand/maximiliano-waigand-tp/issues"
+  },
+  "homepage": "https://github.com/maximilianowaigand/maximiliano-waigand-tp#readme",
   "description": ""
 }

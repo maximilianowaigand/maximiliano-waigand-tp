@@ -1,5 +1,7 @@
 
 
+@import 'base/colors';
+
 video {
 	position:absolute;
 	left: 0;
@@ -11,7 +13,7 @@ video {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-color: #5b8291;
+	background-color: $colorprimario;
 }
 .empresa {
 	z-index: -1;

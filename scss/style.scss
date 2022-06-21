@@ -1,29 +1,14 @@
 
 
+@import 'components/contactos';
+@import 'components/index';
+@import 'components/nosotros';
+@import 'components/nuestrostrabajos';
+@import 'components/productos';
 @import 'components/footer';
-@import 'index';
-@import 'productos';
-@import 'nuestrostrabajos';
-@import 'contactos';
-
-
-
-.list {
-	display: flex;
-	justify-content: space-around;
-	margin: 5px;
-	width: 50%;
-	list-style: none;
-}
-.conteiner-list {
-	.list {
-		a {
-			color: white;
-			text-decoration: none;
-		}
-	}
-}*/
-
+@import 'base/colors';
+@import 'base/fonts';
+@import 'base/_mixins.scss';
 
 
 
@@ -31,5 +16,6 @@
 	width: 50%;
 	border: 4px solid black;
 }
+
 
 

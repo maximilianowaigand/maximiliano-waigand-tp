@@ -34,6 +34,12 @@
 @media (max-width:576px) {
 	.conteiner-productos { display: flex;
 		flex-direction: column;
-
+		margin: 10px;
+		
 	}
+	.text-productos {margin: 10px;}
+
+	.productos {margin: 10px;}
+
+	.pyd {border: solid, 10px, black;}
 }

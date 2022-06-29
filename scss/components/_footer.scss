@@ -10,4 +10,14 @@
 .sociales {
 	display: flex;
 	justify-content: space-between;
-	width: 3%;}
+	width: 3%;
+}
+
+	@media (max-width:576px) {
+		.conteiner-sociales { 
+			display: flex;
+			flex-direction: column;
+			
+	
+		}
+	}

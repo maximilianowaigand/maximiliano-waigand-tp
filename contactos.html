@@ -42,32 +42,53 @@
     <section>
         <h1>contactos</h1>
         
-        <form>
+       <!-- <form class="form">
             <fieldset>
                 <legend>datos</legend>
-            <label for="nombre_apellido">NOMBRE APELLIDO</label>
+            <label for="nombre_apellido">nombre y apellido</label>
             <input type="text" name="nombre_apellido"/>
 
             <fieldset>
-                <legend>tipo de abertura</legend>
+              <label for="">tipo de abertura</label>
                 <select name="tipodeabertura">
                     <option value="ventana">ventana</option>
                     <option value="puerta">puerta</option>
                     <option value="ventana balcon">ventana balcon</option>
                 </select>
             </fieldset>
-            <div>pvc</div>
-            <input type="radio" name="material" value="pvc" />
-            <div>aluminio</div>
-            <input type="radio" name="material" value="aluminio" />
-            <form>
+            <div class="material">pvc</div>
+            <input class="material" type="radio" name="material" value="pvc" />
+            <div class="material">aluminio</div>
+            <input class="material" type="radio" name="material" value="aluminio" />
+            <div>
             <input type="submit" value="Enviar formulario"/>
             <input type="reset" value="Limpiar formulario"/>
-            </form>
+            </div>
         </fieldset>
-        </form>
+        </form> 
 
         
+    </section>  -->
+
+
+    <section class="form">
+      <input class="controls" type="text" name="correo" id="correo" placeholder="ingrese su correo">
+      <input class="controls" type="text" name="nombre apellido" id="nombre_apellido" placeholder="nombre y apellido">
+      <input class="controls" type="text" name="tipo de abertura" id="tipo_de_abertura" placeholder="venta, puerta balcon, puerta">
+      <input class="controls" type="text" name="medidas" id="medidas" placeholder="medidas">
+      <fieldset>
+        <label for="">material</label>
+          <select name="material">
+              <option value="PVC">PVC</option>
+              <option value="hierro">hierro</option>
+              <option value="aluminio">aluminio</option>
+          </select>
+      </fieldset>
+      <input type="text" name="observaciones" id="observaciones" placeholder="observaciones">
+      <div class="conteiner-botons">
+        <input class="botons" type="submit" value="Enviar formulario"/>
+        <input class="botons" type="reset" value="Limpiar formulario"/>
+        </div>
     </section>
 
     <h3>ubicacion</h3>

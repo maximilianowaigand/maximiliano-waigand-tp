@@ -2,41 +2,43 @@
 
 @import 'base/colors';
 
-video {
+.video {
 	position:absolute;
 	left: 0;
 	top: 0;
-	height: 100%;
 	z-index: -1;
 	width: 100%;
 	margin: 0;
+	padding-top: 40px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: $colorprimario;
+
+
 }
+
 .empresa {
+	font-family: 'Exo', sans-serif;
 	z-index: -1;
-	padding: 60px 40px 200px;
-	color: $colorterciario;
-	font-size: 80px;
+	margin: 300px 300PX 0 300PX ;
+	color: $colorcuarto;
+	font-size: 90px;
+	transition: all 2s;
+	width: 70%;
+	padding: 0%;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	transition: all 2s;
-	width: 100%;
-	&:hover {
-		transform: scaleX(1.25);
-	}
+	border: 10px solid $colorcuarto;
 }
 .vision {
 	display: flex;
-	justify-content: center;
-	color: $colorsecundario;
+	justify-content:right;
+	color: $colorcuarto;
 	font-size: 20px;
-	padding: 20px;
+	padding: 2px;
 	margin: 5px 390px;
-	background-image: $colorprimario;
+	border-bottom: 3px solid $colorcuarto;
 }
 
 @media (max-width:1100px) {
@@ -44,4 +46,12 @@ video {
 		display: none
 
 	}
+}
+
+@media (max-width:576px) {
+	.empresa {
+		font-size: 40px;
+		text-align: center;
+	}
+
 }

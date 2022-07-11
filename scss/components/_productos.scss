@@ -2,6 +2,11 @@
 .productos {
 	color: black;}
 
+	.text-productos {
+		margin: 10px;
+		font-family: 'Barlow', sans-serif; ;
+		}
+
     
 .conteiner-productos {
 	display: grid;
@@ -12,21 +17,81 @@
 	grid-template-areas:
 	"puertas complementos aberturas"
     "puertas pisos pisos";
+	
 
 }
 .aberturas {
 	grid-area: aberturas;
-}
+	transition: all 1.3s;
+	p {visibility: hidden;}	
+
+	&:hover {
+		transform: scale(1.2);
+		p {
+			visibility: visible;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 30%;
+			background-color: rgba(0,103, 123, 0.7);
+	}
+		}
+	}
 .pisos {
 	grid-area: pisos;
+	transition: all 1.3s;
+	border: 5px solid $colorcuarto;
+	p {visibility: hidden;}
+	&:hover {
+		transform: scale(1.2);
+		p {
+			visibility: visible;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 30%;
+			background-color: rgba(0,103, 123, 0.7);
 	}
+	}
+}
 
 .complementos {
 	grid-area: complementos;
+	transition: all 1.3s;
+	border: 5px solid $colorcuarto;
+	p {visibility: hidden;}
+	&:hover {
+		transform: scale(1.2);
+		p {
+			visibility: visible;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 30%;
+			background-color: rgba(0,103, 123, 0.7);
+	}
+	}
 }
+
 .puertas {
 	grid-area: puertas;
+	transition: all 1.3s;
+	border: 5px solid $colorcuarto;
+	p {visibility: hidden;}
+	&:hover {
+		transform: scale(1.2);
+		p {
+			visibility: visible;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 20%;
+			background-color: rgba(0,103, 123, 0.7);
+	}
+		
+	}
 }
+
 .pyd {
 	height: 100%;
 	width: 100%;}
@@ -34,12 +99,36 @@
 @media (max-width:576px) {
 	.conteiner-productos { display: flex;
 		flex-direction: column;
-		margin: 10px;
-		
+		margin: 10px;}
+
+	.pisos{
+		&:hover{transform: scale(1);
 	}
-	.text-productos {margin: 10px;}
+    }
 
-	.productos {margin: 10px;}
+	.aberturas{
+		&:hover{transform: scale(1);
+	}
+    }
 
-	.pyd {border: solid, 10px, black;}
+	.puertas{
+		&:hover{transform: scale(1);
+	}
+    }
+
+	.complementos{
+		&:hover{transform: scale(1);
+			
+	}
+    }
+	
+	
+	.pyd {border: 10px, black, solid;}
+
+}
+
+
+.videoyoutube {
+	margin: 50px;
+	
 }

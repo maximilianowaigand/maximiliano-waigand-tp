@@ -1,69 +1,96 @@
-.map-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0; }
-
-.map-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 50%;
-  width: 50%;
-  position: absolute; }
-
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2? family= Exo:wght@600 & display=swap");
 .form {
   padding: 50px 150px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 80px;
   width: 50%;
-  background-color: aqua;
-  border-radius: 4px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  background-image: url(../../multimedia/imagenes/imagenesdelafabrica/imagenfondoformulario.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .form .material {
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: whitesmoke; }
+  .form .controls {
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0px 15px 25px 0, 0, 0, 0.5; }
+    .form .controls .observaciones {
+      padding: 50px; }
   .form .conteiner-botons {
+    border-radius: 10px;
     display: flex;
     justify-content: space-around; }
     .form .conteiner-botons .botons {
       margin: 20px; }
 
-video {
+@media (max-width: 576px) {
+  .form {
+    margin-top: 0;
+    width: 100%;
+    padding: 0; }
+  .map-responsive iframe {
+    width: 100%;
+    height: 100%; } }
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  margin: 10px; }
+
+.map-responsive iframe {
+  position: absolute; }
+
+.video {
   position: absolute;
   left: 0;
   top: 0;
-  height: 100%;
   z-index: -1;
   width: 100%;
   margin: 0;
+  padding-top: 40px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #080c25; }
 
 .empresa {
+  font-family: 'Exo', sans-serif;
   z-index: -1;
-  padding: 60px 40px 200px;
-  color: #3071e7;
-  font-size: 80px;
+  margin: 300px 300PX 0 300PX;
+  color: #ffffff;
+  font-size: 90px;
+  transition: all 2s;
+  width: 70%;
+  padding: 0%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  transition: all 2s;
-  width: 100%; }
-  .empresa:hover {
-    transform: scaleX(1.25); }
+  border: 10px solid #ffffff; }
 
 .vision {
   display: flex;
-  justify-content: center;
-  color: #161E35;
+  justify-content: right;
+  color: #ffffff;
   font-size: 20px;
-  padding: 20px;
+  padding: 2px;
   margin: 5px 390px;
-  background-image: #080c25; }
+  border-bottom: 3px solid #ffffff; }
 
 @media (max-width: 1100px) {
   .vision {
     display: none; } }
+
+@media (max-width: 576px) {
+  .empresa {
+    font-size: 40px;
+    text-align: center; } }
 
 .nombre-empresa {
   background-color: black;
@@ -71,21 +98,31 @@ video {
   font-size: 44px;
   border: 2px solid black;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  font-family: 'Exo', sans-serif; }
 
 h3 {
   padding: 40px 10px 0 10px;
   color: whitesmoke;
-  background-image: linear-gradient(#50b6ff, #50b6ff38);
   display: flex;
   justify-content: flex-start;
   font-size: 30px; }
 
+.trabajo p {
+  position: absolute;
+  width: 95%;
+  height: 15%;
+  background-color: rgba(0, 103, 123, 0.7);
+  bottom: 0;
+  margin: 10px; }
+
 .img-model {
-  width: 100%;
+  width: 95%;
+  padding: 20px;
   display: flex;
   align-items: center;
-  margin: 10px; }
+  margin: 10px;
+  margin: auto; }
 
 .nuestros-trabajos {
   display: flex;
@@ -93,6 +130,10 @@ h3 {
 
 .productos {
   color: black; }
+
+.text-productos {
+  margin: 10px;
+  font-family: 'Barlow', sans-serif; }
 
 .conteiner-productos {
   display: grid;
@@ -103,16 +144,67 @@ h3 {
   grid-template-areas: "puertas complementos aberturas" "puertas pisos pisos"; }
 
 .aberturas {
-  grid-area: aberturas; }
+  grid-area: aberturas;
+  transition: all 1.3s; }
+  .aberturas p {
+    visibility: hidden; }
+  .aberturas:hover {
+    transform: scale(1.2); }
+    .aberturas:hover p {
+      visibility: visible;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 30%;
+      background-color: rgba(0, 103, 123, 0.7); }
 
 .pisos {
-  grid-area: pisos; }
+  grid-area: pisos;
+  transition: all 1.3s;
+  border: 5px solid #ffffff; }
+  .pisos p {
+    visibility: hidden; }
+  .pisos:hover {
+    transform: scale(1.2); }
+    .pisos:hover p {
+      visibility: visible;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 30%;
+      background-color: rgba(0, 103, 123, 0.7); }
 
 .complementos {
-  grid-area: complementos; }
+  grid-area: complementos;
+  transition: all 1.3s;
+  border: 5px solid #ffffff; }
+  .complementos p {
+    visibility: hidden; }
+  .complementos:hover {
+    transform: scale(1.2); }
+    .complementos:hover p {
+      visibility: visible;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 30%;
+      background-color: rgba(0, 103, 123, 0.7); }
 
 .puertas {
-  grid-area: puertas; }
+  grid-area: puertas;
+  transition: all 1.3s;
+  border: 5px solid #ffffff; }
+  .puertas p {
+    visibility: hidden; }
+  .puertas:hover {
+    transform: scale(1.2); }
+    .puertas:hover p {
+      visibility: visible;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 20%;
+      background-color: rgba(0, 103, 123, 0.7); }
 
 .pyd {
   height: 100%;
@@ -123,19 +215,28 @@ h3 {
     display: flex;
     flex-direction: column;
     margin: 10px; }
-  .text-productos {
-    margin: 10px; }
-  .productos {
-    margin: 10px; }
+  .pisos:hover {
+    transform: scale(1); }
+  .aberturas:hover {
+    transform: scale(1); }
+  .puertas:hover {
+    transform: scale(1); }
+  .complementos:hover {
+    transform: scale(1); }
   .pyd {
-    border: solid, 10px, black; } }
+    border: 10px, black, solid; } }
+
+.videoyoutube {
+  margin: 50px; }
 
 .conteiner-sociales {
   position: fixed;
   bottom: 0;
   right: 10px;
   display: flex;
-  flex-direction: row-reverse; }
+  flex-direction: row-reverse;
+  border-radius: 2rem 0;
+  background-color: rgba(245, 245, 245, 0.597); }
 
 .sociales {
   display: flex;

@@ -1,6 +1,6 @@
 
 .productos {
-	color: black;
+	color: $colorcuarto;
 	display: flex;
 	justify-content: center;
 	background-color: $colorterciario;
@@ -21,6 +21,9 @@
 	grid-template-areas:
 	"puertas complementos aberturas"
     "puertas pisos pisos";
+	p {
+		font-family: 'Exo', sans-serif;
+	}
 	
 
 }

@@ -1,6 +1,10 @@
 
 .productos {
-	color: black;}
+	color: black;
+	display: flex;
+	justify-content: center;
+	background-color: $colorterciario;
+}
 
 	.text-productos {
 		margin: 10px;
@@ -121,9 +125,6 @@
 			
 	}
     }
-	
-	
-	.pyd {border: 10px, black, solid;}
 
 }
 

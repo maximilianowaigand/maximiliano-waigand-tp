@@ -2,40 +2,31 @@
 @import 'base/colors';
 
 
-h3 {
-	padding: 40px 10px 0 10px;
-	color: whitesmoke;
-	display: flex;
-	justify-content: flex-start;
-	font-size: 30px;
-	
-}
-
-.trabajo{
-	p {
-		position:absolute;
-		width: 95%;
-		height: 15%;
-		background-color: rgba(0,103, 123, 0.7);
-		bottom: 0;
-		margin: 10px;
-		
-		}
-
-	}
-	
-
-.img-model {
-	width: 95%;
-	padding: 20px;
-	display: flex;
-	align-items: center;
-	margin: 10px;
-	margin: auto;
-	
-}
-
 .nuestros-trabajos {
 	display: flex;
 	justify-content: center;
+	background-color: $colorterciario;
 }
+
+.conteiner-trabajos{
+	h3 {
+		padding: 40px 10px 0 10px;
+		display: flex;
+		justify-content: flex-start;
+		font-size: 30px;
+		border-bottom: 2px solid $colorsecundario;
+	
+		
+	}
+	img {
+		width: 95%;
+		padding: 20px;
+		display: flex;
+		align-items: center;
+		margin: 10px;
+		margin: auto;
+	}
+
+}
+
+

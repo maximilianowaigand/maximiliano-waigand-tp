@@ -95,12 +95,11 @@
   .vision {
     display: none; } }
 
-@media (max-width: 576px) {
+@media (max-width: 391px) {
   .empresa {
     font-size: 40px;
-    text-align: center; }
-  .empresa {
-    margin: 250px 80px 100px 300px; } }
+    text-align: center;
+    margin: 0; } }
 
 .nombre-empresa {
   background-color: rgba(11, 103, 123, 0.6);
